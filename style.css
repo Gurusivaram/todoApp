@@ -1,0 +1,17 @@
+.list-group-item{
+    background: rgb(233, 235, 236);
+    margin: 0 0 6px 0;
+}
+.container{
+    max-width: 450px;
+}
+input[type=text],
+input[type=text]:focus{
+    color: #fff;
+    border: rgb(208, 228, 231);
+    background: rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+}
+.delete{
+    cursor: pointer;
+}
