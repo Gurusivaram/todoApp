@@ -1,5 +1,6 @@
 const submitForm = document.querySelector('.create');
-const todoList = document.querySelector('.container');
+let todoList = document.querySelector('.container');
+const searchForm = document.querySelector('.search');
 
 const createNewListElement = () => {
     //creating new ul element tag
@@ -9,7 +10,7 @@ const createNewListElement = () => {
         //creating new li element tag
         const newLI = document.createElement('li');
         document.createElement('li')
-        newLI.className = 'list-group-item d-flex justify-content-between align-items center';
+        newLI.className = 'list-group-item d-flex justify-content-between align-items center font-weight-bold';
         //creating new span element tag
         const newSpan = document.createElement('span');
         newSpan.textContent = submitForm.createButton.value;
@@ -28,11 +29,6 @@ const createNewListElement = () => {
     
 };
 
-submitForm.addEventListener('submit', currentEvent => {
-    currentEvent.preventDefault();
-    createNewListElement();
-});
-
 const deleteElementOnClick = currentEvent =>{
     if(currentEvent.target.tagName == 'I'){
         todoList.removeChild(currentEvent.target.parentNode.parentNode);
@@ -43,7 +39,28 @@ const deleteElementOnClick = currentEvent =>{
             else currentEvent.target.style.textDecoration = '';
     }
 };
+
+submitForm.addEventListener('submit', currentEvent => {
+    currentEvent.preventDefault();
+    createNewListElement();
+});
+
+
+
 todoList.addEventListener('click', currentEvent => {
     currentEvent.stopPropagation();
     deleteElementOnClick(currentEvent);
+});
+
+searchForm.addEventListener('keyup', currentEvent => {
+    currentEvent.preventDefault();
+    currentEvent.stopPropagation();
+    currentEvent.preventDefault();
+    const listElements = document.querySelectorAll('span');
+    // todoList = document.querySelector('.container');
+    // console.log(listElements.length);
+    listElements.forEach(currentElement => {
+        console.log(currentElement.textContent.includes(searchForm.searchButton.value));
+    });
+    // console.log(listElements);
 });
