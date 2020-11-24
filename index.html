@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Todo</title>
 </head>
+
+
 <body>
     <div class="container">
         <header class="text-center text-dark text-monospace my-4">
@@ -15,31 +18,25 @@
                 <input type="text" class="form-control bg-light" name="search" placeholder="search"/>
             </form>
         </header>
+        
         <ul class="list-group todos mx-auto text-dark">
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <span>create your todo like this</span>
                 <i class="far fa-minus-square delete"></i>
             </li>
-        <!-- </ul>
-        <ul class="list-group todos mx-auto text-dark">
-            <li class="list-group-item d-flex justify-content-between align-items center">
-                <span>Create your todo like this too</span>
-                <i class="far fa-minus-square delete"></i>
-            </li>
         </ul>
-        <ul class="list-group todos mx-auto text-dark">
-            <li class="list-group-item d-flex justify-content-between align-items center">
-                <span>Create your todo like this tooooo </span>
-                <i class="far fa-minus-square delete"></i>
-            </li>
-        </ul> -->
+        
     </div>
+
+
     <div class="container">
         <form class="create text-center my-4" autocomplete="off">
             <label class="text-dark font-weight-bold">Add something</label>
             <input type="text" class="form-control m-auto bg-light border border-light text-dark" name="createButton" placeholder="type"/>
         </form>
     </div>
+
+
     <script src="app.js"></script>
 </body>
 </html>
