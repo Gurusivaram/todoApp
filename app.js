@@ -4,7 +4,7 @@ let todoList = document.querySelector('.container');
 
 const createNewListElement = () => {
     //creating new ul element tag
-    if(submitForm.createButton.value != ''){
+    if(submitForm.createButton.value != '' && submitForm.createButton.value.length <= 35){
         const newUL = document.createElement('ul');
         newUL.className = 'list-group todos mx-auto text-dark';
         //creating new li element tag
@@ -26,6 +26,7 @@ const createNewListElement = () => {
         todoList.appendChild(newUL);
         submitForm.createButton.value = '';
     }
+    else alert('try small sentences yours is ' +  submitForm.createButton.value.length);
     
 };
 
