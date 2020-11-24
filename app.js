@@ -1,6 +1,6 @@
 const submitForm = document.querySelector('.create');
 let todoList = document.querySelector('.container');
-const searchForm = document.querySelector('.search');
+// const searchForm = document.querySelector('.search');
 
 const createNewListElement = () => {
     //creating new ul element tag
@@ -52,15 +52,15 @@ todoList.addEventListener('click', currentEvent => {
     deleteElementOnClick(currentEvent);
 });
 
-searchForm.addEventListener('keyup', currentEvent => {
-    currentEvent.preventDefault();
-    currentEvent.stopPropagation();
-    currentEvent.preventDefault();
-    const listElements = document.querySelectorAll('span');
-    // todoList = document.querySelector('.container');
-    // console.log(listElements.length);
-    listElements.forEach(currentElement => {
-        console.log(currentElement.textContent.includes(searchForm.searchButton.value));
-    });
-    // console.log(listElements);
-});
+// searchForm.addEventListener('keyup', currentEvent => {
+//     currentEvent.preventDefault();
+//     currentEvent.stopPropagation();
+//     currentEvent.preventDefault();
+//     const listElements = document.querySelectorAll('span');
+//     // todoList = document.querySelector('.container');
+//     // console.log(listElements.length);
+//     listElements.forEach(currentElement => {
+//         console.log(currentElement.textContent.includes(searchForm.searchButton.value));
+//     });
+//     // console.log(listElements);
+// });
