@@ -11,4 +11,3 @@ App Screen Shot
 
 ![alt text](https://github.com/Gurusivaram/todoApp/blob/main/todo_example.png?raw=true)
 
-
