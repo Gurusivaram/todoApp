@@ -1,10 +1,8 @@
 TodoApp
 ===============
 
-Todo app is a simple web based todo app that you can use to store your temporary lists which you want to remember for some time. For example, if you're going to grocery shop, you tend to forgot the things that you wanna buy for most of the times, for that if you noted those items in this todo app in the browser means, you can cross that once you completed purchasing it or you can also add or remove items on the go. THe app is on live and you can access it via the below given link.
-```
-https://todo-app-guru.herokuapp.com/
-```
+Todo App is a simple web-based tool that allows you to store temporary lists that you want to remember for a certain period. For instance, when going grocery shopping, it's common to forget the items you need to buy. By noting down these items in the Todo App in your browser, you can easily keep track of them. You can mark items as completed once you've purchased them, or add and remove items as needed while on the go.
+
 
 App Screen Shot
 ===============
